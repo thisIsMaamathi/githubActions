@@ -1,4 +1,4 @@
-name: Build and run tests
+name: Build and run test
 
 on:
   push:
@@ -16,4 +16,4 @@ tests:
     - run: npm ci
 
     - name: Runs tests
-    - run: npm run test
+    - run: npm run test     
