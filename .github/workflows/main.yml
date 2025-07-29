@@ -19,6 +19,8 @@ jobs:
 
       - name: Build code
         run: npm ci
+        working-directory: exercise
 
       - name: Runs tests
         run: npm run test
+        working-directory: exercise
