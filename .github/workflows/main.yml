@@ -1,0 +1,16 @@
+name: Build and run tests
+
+on: push
+
+jobs:
+tests:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout code
+    - use: actions/checkout@v3
+
+    - name: Build code
+    - run: npm ci
+
+    - name: Runs tests
+    - run: npm run test
